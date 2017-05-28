@@ -1,5 +1,0 @@
-D:\AkshayDocument\TP_Work\MVC\MVC_CRUD(ADO.NET)\CRUD\EntitiesVO\bin\Debug\EntitiesVO.dll
-D:\AkshayDocument\TP_Work\MVC\MVC_CRUD(ADO.NET)\CRUD\EntitiesVO\bin\Debug\EntitiesVO.pdb
-D:\AkshayDocument\TP_Work\MVC\MVC_CRUD(ADO.NET)\CRUD\EntitiesVO\obj\Debug\EntitiesVO.dll
-D:\AkshayDocument\TP_Work\MVC\MVC_CRUD(ADO.NET)\CRUD\EntitiesVO\obj\Debug\EntitiesVO.pdb
-D:\AkshayDocument\TP_Work\MVC\MVC_CRUD(ADO.NET)\CRUD\EntitiesVO\obj\Debug\EntitiesVO.csprojResolveAssemblyReference.cache
