@@ -1,0 +1,9 @@
+D:\AkshayDocument\TP_Work\MVC\MVC_CRUD(ADO.NET)\CRUD\CRUDApplicationBO\bin\Debug\CRUDApplicationBO.dll
+D:\AkshayDocument\TP_Work\MVC\MVC_CRUD(ADO.NET)\CRUD\CRUDApplicationBO\bin\Debug\CRUDApplicationBO.pdb
+D:\AkshayDocument\TP_Work\MVC\MVC_CRUD(ADO.NET)\CRUD\CRUDApplicationBO\bin\Debug\CRUDApplicationDO.dll
+D:\AkshayDocument\TP_Work\MVC\MVC_CRUD(ADO.NET)\CRUD\CRUDApplicationBO\bin\Debug\EntitiesVO.dll
+D:\AkshayDocument\TP_Work\MVC\MVC_CRUD(ADO.NET)\CRUD\CRUDApplicationBO\bin\Debug\CRUDApplicationDO.pdb
+D:\AkshayDocument\TP_Work\MVC\MVC_CRUD(ADO.NET)\CRUD\CRUDApplicationBO\bin\Debug\EntitiesVO.pdb
+D:\AkshayDocument\TP_Work\MVC\MVC_CRUD(ADO.NET)\CRUD\CRUDApplicationBO\obj\Debug\CRUDApplicationBO.csprojResolveAssemblyReference.cache
+D:\AkshayDocument\TP_Work\MVC\MVC_CRUD(ADO.NET)\CRUD\CRUDApplicationBO\obj\Debug\CRUDApplicationBO.dll
+D:\AkshayDocument\TP_Work\MVC\MVC_CRUD(ADO.NET)\CRUD\CRUDApplicationBO\obj\Debug\CRUDApplicationBO.pdb

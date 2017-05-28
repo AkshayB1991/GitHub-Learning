@@ -1,0 +1,72 @@
+﻿@model EntitiesVO.EmployeeVO
+@{
+    ViewBag.Title = "Create";
+    //SelectList ddlDesignation = ViewBag.Designation;
+    SelectList ddlDepartment = ViewBag.Department;
+    List<SelectListItem> chkFruits = ViewBag.Fruits;    
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+    <div class="form-horizontal">
+        <h4>Create New Employee</h4>
+        <hr />
+        <div class="form-group">
+            @Html.LabelFor(model => model.ID, "ID", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ID)
+                @Html.ValidationMessageFor(model => model.ID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name, "Name", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Name)
+                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Designation, "Designation", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Designation.ID,Model.ListDesignation, "-Select-")
+                @Html.ValidationMessageFor(model => model.Designation.ID, "Select Valid Designation", new { @class = "text-danger" })
+            </div>
+        </div>
+        <div class="form-group">
+            @Html.LabelFor(model => model.Department, "Department", new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(model => model.Department.ID, ddlDepartment, "--Select--")
+                @Html.ValidationMessageFor(model => model.Department.ID, "Select valid department", new { @class = "text-denger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @*@Html.LabelFor(model => model.Fruits.FruitName, "Fruits", new { @class = "control-label col-md-2" })*@
+
+            <div class="col-md-10">
+                <table>
+                    @for (int i = 0; i < Model.ListFruits.Count; i++)
+                    {
+                        <tr>
+                            <td>
+                                @Html.HiddenFor(x=>x.ListFruits[i].FruitID)
+                                @Html.CheckBoxFor(x=>x.ListFruits[i].IsSelected)
+                                @Html.DisplayFor(x=>x.ListFruits[i].FruitName)
+                                @Html.HiddenFor(x=>x.ListFruits[i].FruitName)
+                            </td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}

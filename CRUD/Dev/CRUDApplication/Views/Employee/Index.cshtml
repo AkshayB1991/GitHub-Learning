@@ -1,0 +1,27 @@
+﻿@model IEnumerable<EntitiesVO.EmployeeVO>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+@Html.ActionLink("Create New Records","Create")
+<table class="table">
+    <tr>
+        <td>ID</td>
+        <td>Name</td>
+        <td>Designation</td>
+        <td>Department</td>
+        <td>Action</td>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(modelItem => item.ID)</td>
+            <td>@Html.DisplayFor(modelItem => item.Name)</td>
+            <td>@Html.DisplayFor(modelitem=>item.Designation.Name)</td>
+            <td>@Html.DisplayFor(modelitem=>item.Department.Name)</td>
+
+            <td>@Html.ActionLink("Edit", "Edit", new {ID=item.ID }) | @Html.ActionLink("Delete", "Delete", new {ID=item.ID })</td>
+        </tr>
+    }
+</table>
